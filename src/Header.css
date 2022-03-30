@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+    height: 90px;
+}
+
+.h1{
+    object-fit: contain;
+    height: 150px;
+    margin-left: 40px;
+    padding-left: 40px;
+    color: #452862;
+}
+
+.header_center {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width:fit-content;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+}
+
+.header_center > input {
+    border: none;
+    outline-width: 0;
+    padding: 10px;
+}
+
+.header_right {
+    height: 48px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-right: 80px;
+    width: 6vw;
+    border: 2px solid rgb(150, 121, 121);
+    border-radius: 999px;
+    cursor: pointer;
+}
