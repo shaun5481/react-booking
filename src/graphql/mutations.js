@@ -1,70 +1,109 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createPost = /* GraphQL */ `
-  mutation CreatePost(
-    $input: CreatePostInput!
-    $condition: ModelPostConditionInput
+export const createUser = /* GraphQL */ `
+  mutation CreateUser(
+    $input: CreateUserInput!
+    $condition: ModelUserConditionInput
   ) {
-    createPost(input: $input, condition: $condition) {
+    createUser(input: $input, condition: $condition) {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
       createdAt
       updatedAt
     }
   }
 `;
-export const updatePost = /* GraphQL */ `
-  mutation UpdatePost(
-    $input: UpdatePostInput!
-    $condition: ModelPostConditionInput
+export const updateUser = /* GraphQL */ `
+  mutation UpdateUser(
+    $input: UpdateUserInput!
+    $condition: ModelUserConditionInput
   ) {
-    updatePost(input: $input, condition: $condition) {
+    updateUser(input: $input, condition: $condition) {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
       createdAt
       updatedAt
     }
   }
 `;
-export const deletePost = /* GraphQL */ `
-  mutation DeletePost(
-    $input: DeletePostInput!
-    $condition: ModelPostConditionInput
+export const deleteUser = /* GraphQL */ `
+  mutation DeleteUser(
+    $input: DeleteUserInput!
+    $condition: ModelUserConditionInput
   ) {
-    deletePost(input: $input, condition: $condition) {
+    deleteUser(input: $input, condition: $condition) {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createBookings = /* GraphQL */ `
+  mutation CreateBookings(
+    $input: CreateBookingsInput!
+    $condition: ModelBookingsConditionInput
+  ) {
+    createBookings(input: $input, condition: $condition) {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateBookings = /* GraphQL */ `
+  mutation UpdateBookings(
+    $input: UpdateBookingsInput!
+    $condition: ModelBookingsConditionInput
+  ) {
+    updateBookings(input: $input, condition: $condition) {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteBookings = /* GraphQL */ `
+  mutation DeleteBookings(
+    $input: DeleteBookingsInput!
+    $condition: ModelBookingsConditionInput
+  ) {
+    deleteBookings(input: $input, condition: $condition) {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
       createdAt
       updatedAt
     }

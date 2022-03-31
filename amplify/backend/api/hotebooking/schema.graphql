@@ -1,0 +1,19 @@
+type user @model @auth(rules: [{ allow: public }]){
+  id: ID!
+  email: String!
+  name: String!
+  surname: String!
+  gender: String!
+  description: String!
+  cell: String!
+  picture: String!
+}
+
+type Bookings @model @auth(rules: [{ allow: public }]){
+  id: ID!
+  startDate: String!
+  endDate: String!
+  price: Float!
+  numberOfDays: Int!
+  cancel: String!
+}

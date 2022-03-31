@@ -1,46 +1,73 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getPost = /* GraphQL */ `
-  query GetPost($id: ID!) {
-    getPost(id: $id) {
+export const getUser = /* GraphQL */ `
+  query GetUser($id: ID!) {
+    getUser(id: $id) {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
       createdAt
       updatedAt
     }
   }
 `;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
+export const listUsers = /* GraphQL */ `
+  query ListUsers(
+    $filter: ModelUserFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        image
-        type
-        title
+        email
+        name
+        surname
+        gender
         description
-        bed
-        bedroom
-        maxGuests
-        oldPrice
-        newPrice
-        latitude
-        longitude
+        cell
+        picture
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const getBookings = /* GraphQL */ `
+  query GetBookings($id: ID!) {
+    getBookings(id: $id) {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listBookings = /* GraphQL */ `
+  query ListBookings(
+    $filter: ModelBookingsFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listBookings(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        startDate
+        endDate
+        price
+        numberOfDays
+        cancel
         createdAt
         updatedAt
       }

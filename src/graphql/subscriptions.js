@@ -1,61 +1,91 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreatePost = /* GraphQL */ `
-  subscription OnCreatePost {
-    onCreatePost {
+export const onCreateUser = /* GraphQL */ `
+  subscription OnCreateUser {
+    onCreateUser {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
       createdAt
       updatedAt
     }
   }
 `;
-export const onUpdatePost = /* GraphQL */ `
-  subscription OnUpdatePost {
-    onUpdatePost {
+export const onUpdateUser = /* GraphQL */ `
+  subscription OnUpdateUser {
+    onUpdateUser {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
       createdAt
       updatedAt
     }
   }
 `;
-export const onDeletePost = /* GraphQL */ `
-  subscription OnDeletePost {
-    onDeletePost {
+export const onDeleteUser = /* GraphQL */ `
+  subscription OnDeleteUser {
+    onDeleteUser {
       id
-      image
-      type
-      title
+      email
+      name
+      surname
+      gender
       description
-      bed
-      bedroom
-      maxGuests
-      oldPrice
-      newPrice
-      latitude
-      longitude
+      cell
+      picture
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateBookings = /* GraphQL */ `
+  subscription OnCreateBookings {
+    onCreateBookings {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateBookings = /* GraphQL */ `
+  subscription OnUpdateBookings {
+    onUpdateBookings {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteBookings = /* GraphQL */ `
+  subscription OnDeleteBookings {
+    onDeleteBookings {
+      id
+      startDate
+      endDate
+      price
+      numberOfDays
+      cancel
       createdAt
       updatedAt
     }

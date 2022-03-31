@@ -1,25 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-reactbooking-dev-81051-authRole",
-      "UnauthRoleArn": "arn:aws:iam::493162465146:role/amplify-reactbooking-dev-81051-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::493162465146:role/amplify-reactbooking-dev-81051-authRole",
+      "AuthRoleName": "amplify-hotebooking-dev-183401-authRole",
+      "UnauthRoleArn": "arn:aws:iam::493162465146:role/amplify-hotebooking-dev-183401-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::493162465146:role/amplify-hotebooking-dev-183401-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-reactbooking-dev-81051-deployment",
-      "UnauthRoleName": "amplify-reactbooking-dev-81051-unauthRole",
-      "StackName": "amplify-reactbooking-dev-81051",
-      "StackId": "arn:aws:cloudformation:us-east-1:493162465146:stack/amplify-reactbooking-dev-81051/5a592ca0-227e-11ec-8676-0a82746fa943",
-      "AmplifyAppId": "d9d0elcg289rv"
+      "DeploymentBucketName": "amplify-hotebooking-dev-183401-deployment",
+      "UnauthRoleName": "amplify-hotebooking-dev-183401-unauthRole",
+      "StackName": "amplify-hotebooking-dev-183401",
+      "StackId": "arn:aws:cloudformation:us-east-1:493162465146:stack/amplify-hotebooking-dev-183401/384ab730-b047-11ec-8c94-0e1958115f53",
+      "AmplifyAppId": "d2t954qacytcnt"
     },
     "categories": {
       "auth": {
-        "reactbooking7dfe1014": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d9d0elcg289rv",
-          "type": "manual"
-        }
+        "hotebooking125299c7": {}
       }
     }
   }

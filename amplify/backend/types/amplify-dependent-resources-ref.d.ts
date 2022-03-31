@@ -1,12 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
-    "api": {
-        "reactbooking": {
-            "GraphQLAPIIdOutput": "string",
-            "GraphQLAPIEndpointOutput": "string"
-        }
-    },
     "auth": {
-        "reactbooking7dfe1014": {
+        "hotebooking125299c7": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -16,10 +10,11 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientID": "string"
         }
     },
-    "storage": {
-        "bookingimages": {
-            "BucketName": "string",
-            "Region": "string"
+    "api": {
+        "hotebooking": {
+            "GraphQLAPIKeyOutput": "string",
+            "GraphQLAPIIdOutput": "string",
+            "GraphQLAPIEndpointOutput": "string"
         }
     }
 }

@@ -1,27 +1,54 @@
 import React from 'react'
-import './App.css';
-import Home from './Home';
-import SignUp from './SignUp';
-import SearchPage from './SearchPage';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Home  from './Home'
+import Properties  from './Components/Properties/properties'
+import Services  from './Components/Services'
+import History  from './Components/history'
 
+import { RoomProvider } from './Global/context'
+
+import Rooms from './Components/pages/Rooms';
+import SingUp from './SignUp';
+import SingleRoom from './Components/pages/SingleRoom';
+import Error from './Components/pages/Error';
+//import Navbar from './components/Navbar';
+import About from './Components/pages/About';
+//import Footer from './components/Footer';
+import Contact from './Components/pages/Contact';
+import Booknow from './Components/pages/Booknow';
+import Google from './Components/Google';
+
+import Update  from './Components/Update/update'
+import Profile  from './Components/Profile/profile'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 function App() {
   return (
-
-    //BEM
     <div className="App">
-        <Router>
-          
+      <RoomProvider>
+         <BrowserRouter>
           <Switch>
-          <Route path="/" component={SignUp} exact />
-            <Route path="/search" component={SearchPage} />
-          <Route path="/home">
-          <Home />
-          </Route>
+            <Route exact path='/' component={SingUp} />   
+            <Route exact path='/home' component={ Home } />   
+            <Route path="/properties" component={Properties} />  
+            <Route path="/profile" component={Profile} />  
+            <Route path="/update" component={Update} />  
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/rooms" component={Rooms}/>
+            <Route exact path="/history" component={History}/>
+            <Route exact path="/services" component={Services}/>
+            <Route exact path="/google" component={Google}/>
+            <Route exact path="/rooms/:slug" component={SingleRoom} />
+            {/* <Route exact path="/rooms/:slug" component={SingleRoom} /> */}
+            <Route exact path="/booknow/:slug" component={Booknow} />
+            <Route component={Error}/>     
           </Switch>
-
-         </Router>
+        </BrowserRouter> 
+      </RoomProvider>
+       
     </div>
   );
 }

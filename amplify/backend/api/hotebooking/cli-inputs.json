@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "hotebooking",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\Codetribe\\majorP\\react-booking\\amplify\\backend\\api\\hotebooking\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

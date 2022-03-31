@@ -11,9 +11,9 @@ function Banner() {
         <div className="banner">
            
             <div className="banner_info">
-                <h1>Looking for a place to find chill? We here for you!</h1>
+                <p>Looking for a place to find chill? We here for you!</p>
             
-                <Button onClick={() => history.push('/search')} variant='outlined' >Explore!</Button>
+                <Button onClick={() => history.push('/rooms')} variant='outlined' >Explore!</Button>
             </div>
         </div>
     )
