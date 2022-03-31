@@ -3,7 +3,8 @@ import { withGoogleMap, GoogleMap, withScriptjs, InfoWindow, Marker } from "reac
 import Geocode from "react-geocode";
 import Autocomplete from 'react-google-autocomplete';
 import { Descriptions } from 'antd';
-import Nav from './Navbar'
+import { Button } from "@material-ui/core";
+import { Link } from 'react-router-dom';
 
 const { MarkerWithLabel } = require("react-google-maps/lib/components/addons/MarkerWithLabel");
 
@@ -40,8 +41,8 @@ class Google extends React.Component {
                         lng: position.coords.longitude,
                     },
                     markerPosition: {
-                        lat: -25.532949256929275, 
-                        lng: 31.344689013104002,
+                        lat:  -25.878363, 
+                        lng: 28.159325,
                     }
                 },
                     () => {
@@ -224,16 +225,16 @@ class Google extends React.Component {
 
         return (
             <>
-             <Nav />
-            <div style={{ maxWidth: 1500 }}>
-                <h1>Alex Hotel on Google Map</h1>
-                <Descriptions bordered>
-                    <Descriptions.Item label="City">{this.state.city}</Descriptions.Item>
-                    <Descriptions.Item label="Area">{this.state.area}</Descriptions.Item>
-                    <Descriptions.Item label="State">{this.state.state}</Descriptions.Item>
-                    <Descriptions.Item label="Address">{this.state.address}</Descriptions.Item>
-                </Descriptions>
+            <div>
+                   <h1>Stays nearby</h1>
+                <Link className="searchPage_info  " style={{textDecoration: 'none'} } to="history" ><Button variant="outline">HISTORY</Button> </Link> 
+                <Link className="searchPage_info  " style={{textDecoration: 'none'} } to="google" ><Button variant="outline">GOOGLE MAP</Button> </Link> 
+                <Link className="searchPage_info  " style={{textDecoration: 'none'} } to="history" ><Button variant="outline">History</Button> </Link> 
+                <Link className="searchPage_info  " style={{textDecoration: 'none'} } to="history" ><Button variant="outline">History</Button> </Link> 
 
+            </div>
+            <div style={{ maxWidth: 1500 }}>
+  
                 <AsyncMap
                     googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZFmKi4ar5nQwXC1UL-oVSJxCwF08Ylo&libraries=places"
                     loadingElement={

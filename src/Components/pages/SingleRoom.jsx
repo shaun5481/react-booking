@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { RoomContext } from '../../Global/context';
 import StyledHero from '../StyledHero';
 import "../../searchPage.css";
+import { Button } from "@material-ui/core";
+
 
 export default class SingleRoom extends Component {
     constructor (props){
@@ -34,7 +36,9 @@ export default class SingleRoom extends Component {
         const {name,capacity,size,price,images} = room;
         const [mainImg, ...defaultBcg] = images;
         return (
+            
             <>
+          
             <StyledHero img={mainImg || this.state.defaultBcg }>
            
        
